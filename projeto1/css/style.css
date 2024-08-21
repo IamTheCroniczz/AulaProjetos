@@ -1,0 +1,63 @@
+body{ /*seleciona a pagina inteira*/
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+a{
+    color: rgb(73, 2, 121);/*seleciona as linhas*/
+}
+.cor1{ /*criei uma classe para mudar especificamente uma linha*/
+    color: aquamarine;
+}
+
+.cor2{
+    color: fuchsia;
+}
+.cor3{
+    color: coral;
+}
+/* coloquei o hover para mudar a cor quando passar o mouse por cima */
+/* para colocar em somente em um elemento especifico, devera indicar a classe */
+ header nav ul li  a:hover{
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+/* usei display flex e list para remover as bolinhas  */
+ul{
+    display: flex;
+    /* usei justify para organizar os elementos usando os espaços que sobram */
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li{
+    /* usei o border para criar o contorno em volta do elemento */
+    border: 2px solid white;
+    /* usei margin para criar o espaçamento entre os elementos */
+    margin: 5px;
+    /* usei padding para aumentar o espaço dentro da caixa */
+    /* seria interessante alterar entre os tipos de padding para entender todas as diferenças */
+    padding: 5px;
+    /* usei o background color para mudar a cor de fundo do elemento */
+    background-color: rgb(0, 0, 0);
+    /* usei border radius para arredondar */
+    border-radius: 5px;    
+}
+.avatar img{
+    width: 150px;
+    border-radius: 80%;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+
+}
+
+.nomecompleto{
+    display: flex;
+    justify-content:center;
+}
+#nomecompleto{
+    display: flex;
+    justify-content: center;
+}
