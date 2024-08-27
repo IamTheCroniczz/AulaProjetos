@@ -1,6 +1,12 @@
 body{ /*seleciona a pagina inteira*/
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    /* sempre importante lembrar que quando nao queremos */
+    /* que o padding nao mude nossa parte de cima, devemos indicar */
+    /* nesse caso 10px */
+    padding: 10px 200px;
 }
 
 a{
@@ -22,11 +28,11 @@ a{
     border-radius: 20px;
     color: rgb(255, 255, 255);
 }
-/* usei display flex e list para remover as bolinhas  */
+/* usei display flex e justify para organizar os elementos usando os espaços que sobram */
 ul{
     display: flex;
-    /* usei justify para organizar os elementos usando os espaços que sobram */
-    justify-content: space-between;
+    /* usei list para remover as bolinhas */
+    justify-content: center;
     list-style-type: none;
 }
 
@@ -43,6 +49,9 @@ li{
     /* usei border radius para arredondar */
     border-radius: 5px;    
 }
+
+
+
 .avatar img{
     width: 150px;
     border-radius: 80%;
@@ -60,4 +69,19 @@ li{
 #nomecompleto{
     display: flex;
     justify-content: center;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape a{
+    margin: 100px 100px;
+}
+
+.rodape img{
+    width: 40px;
+    width: 40px;
 }
