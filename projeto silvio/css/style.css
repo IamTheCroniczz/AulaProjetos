@@ -1,0 +1,140 @@
+body{ /*seleciona a pagina inteira*/
+    background-color: black;
+    .slider {
+        width: 80%;
+        max-width: 800px;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .slides {
+        display: flex;
+        justify-content: center;
+        transition: transform 0.9s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+        box-sizing:border-box;
+    }
+    
+    .slide img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+}
+
+.slider {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    justify-content: left;
+    transition: transform 0.9s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+a{
+    color: rgb(255, 255, 255);/*seleciona as linhas*/
+}
+.cor1{ /*criei uma classe para mudar especificamente uma linha*/
+    color: aquamarine;
+}
+
+.cor2{
+    color: fuchsia;
+}
+.cor3{
+    color: coral;
+}
+/* coloquei o hover para mudar a cor quando passar o mouse por cima */
+/* para colocar em somente em um elemento especifico, devera indicar a classe */
+ header nav ul li  a:hover{
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+/* usei display flex e justify para organizar os elementos usando os espaços que sobram */
+ul{
+    display: flex;
+    /* usei list para remover as bolinhas */
+    justify-content: center;
+    list-style-type: none;
+}
+
+li{
+    /* usei o border para criar o contorno em volta do elemento */
+   
+    /* usei margin para criar o espaçamento entre os elementos */
+    margin: 5px;
+    /* usei padding para aumentar o espaço dentro da caixa */
+    /* seria interessante alterar entre os tipos de padding para entender todas as diferenças */
+    padding: 5px;
+    /* usei o background color para mudar a cor de fundo do elemento */
+    background-color: rgb(0, 0, 0);
+    /* usei border radius para arredondar */
+    border-radius: 5px;    
+}
+
+
+
+
+
+
+.nomecompleto{
+    display: flex;
+    justify-content:center;
+}
+#nomecompleto{
+    display: flex;
+    justify-content: center;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape a{
+    margin: 100px 100px;
+}
+
+.rodape img{
+    width: 40px;
+    width: 40px;
+}
+
+.titulo{ 
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    /* sempre importante lembrar que quando nao queremos 
+     que o padding nao mude nossa parte de cima, devemos indicar 
+     nesse caso 10px */
+    padding: 10px 200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: #333;
+}
