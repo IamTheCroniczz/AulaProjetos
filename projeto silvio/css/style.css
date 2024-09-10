@@ -1,140 +1,93 @@
-body{ /*seleciona a pagina inteira*/
-    background-color: black;
-    .slider {
-        width: 80%;
-        max-width: 800px;
-        overflow: hidden;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #2e8bc0;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 4px;
+      background-color: #000000;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .timeline-content {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-date {
+      font-weight: bold;
+      color: #1a5f7a;
+      margin-bottom: 0.5rem;
+    
+    }
+
+    footer {
+      background-color: #1a5f7a;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
     
-    .slides {
-        display: flex;
-        justify-content: center;
-        transition: transform 0.9s ease-in-out;
-    }
-    
-    .slide {
-        min-width: 100%;
-        box-sizing:border-box;
-    }
-    
-    .slide img {
-        width: 100%;
-        border-radius: 5px;
-    }
-    
-}
-
-.slider {
-    width: 80%;
-    max-width: 800px;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.slides {
-    display: flex;
-    justify-content: left;
-    transition: transform 0.9s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-
-a{
-    color: rgb(255, 255, 255);/*seleciona as linhas*/
-}
-.cor1{ /*criei uma classe para mudar especificamente uma linha*/
-    color: aquamarine;
-}
-
-.cor2{
-    color: fuchsia;
-}
-.cor3{
-    color: coral;
-}
-/* coloquei o hover para mudar a cor quando passar o mouse por cima */
-/* para colocar em somente em um elemento especifico, devera indicar a classe */
- header nav ul li  a:hover{
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-}
-/* usei display flex e justify para organizar os elementos usando os espaços que sobram */
-ul{
-    display: flex;
-    /* usei list para remover as bolinhas */
-    justify-content: center;
-    list-style-type: none;
-}
-
-li{
-    /* usei o border para criar o contorno em volta do elemento */
-   
-    /* usei margin para criar o espaçamento entre os elementos */
-    margin: 5px;
-    /* usei padding para aumentar o espaço dentro da caixa */
-    /* seria interessante alterar entre os tipos de padding para entender todas as diferenças */
-    padding: 5px;
-    /* usei o background color para mudar a cor de fundo do elemento */
-    background-color: rgb(0, 0, 0);
-    /* usei border radius para arredondar */
-    border-radius: 5px;    
-}
-
-
-
-
-
-
-.nomecompleto{
-    display: flex;
-    justify-content:center;
-}
-#nomecompleto{
-    display: flex;
-    justify-content: center;
-}
-
-
-.rodape {
-    display: flex;
-    justify-content: center;
-}
-
-.rodape a{
-    margin: 100px 100px;
-}
-
-.rodape img{
-    width: 40px;
-    width: 40px;
-}
-
-.titulo{ 
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    /* sempre importante lembrar que quando nao queremos 
-     que o padding nao mude nossa parte de cima, devemos indicar 
-     nesse caso 10px */
-    padding: 10px 200px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-    background-color: #333;
-}
